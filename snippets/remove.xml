@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Device -->
+  <remove-project name="device/amlogic/yukawa" />
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/google_car" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/linaro/dragonboard" />
+  <remove-project name="device/linaro/dragonboard-kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/sample" />
+
+  <!-- build repos -->
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+
+  <!-- General repos -->
+
+  <!-- Frameworks Repos -->
+
+  <!-- Hardware repos -->
+
+  <!-- Packages Repos -->
+
+  <!-- Prebuilts -->
+
+  <!-- System repos -->
+
+</manifest>
