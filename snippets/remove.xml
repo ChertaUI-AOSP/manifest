@@ -17,15 +17,23 @@
   <remove-project name="platform/build/soong" />
 
   <!-- General repos -->
+  <remove-project name="platform/bionic" />
 
   <!-- Frameworks Repos -->
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
 
   <!-- Hardware repos -->
+  <remove-project name="platform/hardware/google/pixel" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/interfaces" />
 
   <!-- Packages Repos -->
-
-  <!-- Prebuilts -->
+  <remove-project name="platform/packages/apps/Settings" />
 
   <!-- System repos -->
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/sepolicy" />
 
 </manifest>

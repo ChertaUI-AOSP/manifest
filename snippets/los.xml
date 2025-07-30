@@ -79,7 +79,6 @@
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="github" />
 
   <!-- Hardware repos -->
-  <project path="hardware/lineage/compat" name="LineageOS/android_hardware_lineage_compat" remote="github" />
   <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces"  remote="github"/>
 
   <!-- packages repos -->

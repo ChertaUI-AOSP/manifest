@@ -8,6 +8,9 @@
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
 
+  <!-- General Repos -->
+  <project path="bionic" name="bionic" remote="mica" />
+
   <!-- Build Repos -->
   <project path="build/make" name="build" remote="mica" >
    <copyfile src="core/root.mk" dest="Makefile" />
@@ -23,23 +26,24 @@
    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <!-- Device Repos -->
-
-  <!-- External Repos -->
-
   <!-- Frameworks Repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="mica" />
+  <project path="frameworks/base" name="frameworks_base" remote="mica" />
+  <project path="frameworks/native" name="frameworks_native" remote="mica" />
 
   <!-- Hardware repos -->
-
-  <!-- Mica additions -->
-  <project path="vendor/mica" name="vendor_mica" remote="mica" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="mica" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="mica" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="mica" />
+  <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="mica" />
 
   <!-- Packages Repos -->
-
-  <!-- Prebuilts -->
-
-  <!-- Sepolicy Repos -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="mica" />
 
   <!-- System Repos -->
+  <project path="system/core" name="system_core" remote="mica" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="mica" />
 
+  <!-- Vendor Repos -->
+  <project path="vendor/mica" name="vendor_mica" remote="mica" />
 </manifest>
