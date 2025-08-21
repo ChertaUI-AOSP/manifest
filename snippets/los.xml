@@ -79,6 +79,7 @@
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="github" />
 
   <!-- packages repos -->
+  <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" />
 
   <!-- Extract utils -->
