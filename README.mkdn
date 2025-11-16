@@ -1,0 +1,39 @@
+## **Getting Started** ##
+
+**To initialize your local repository using the MicaOS , use a command like this** :
+
+```bash
+repo init -u https://github.com/Project-Mica/manifest -b 16-qpr1
+```
+
+**And then sync up** :
+
+```bash
+repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
+```
+# 
+
+## Generating GMS
+
+**Skip GMS and this step by**
+
+```bash
+export TARGET_EXCLUDE_GMS=true 
+```
+
+**Or You Gotta generate gms blobs from latest pixel build yourself**
+
+```bash
+$ cd vendor/gms
+$ bash extra* {path to your Pixel 10 XL stock dump}
+$ git reset --hard
+```
+## Now Its time for Building
+
+```bash
+
+$ . build/envsetup.sh
+$ lunch mica_$device-bp3a-userdebug
+$ m mica-release ( for both fastboot and ota packages)
+```
+#

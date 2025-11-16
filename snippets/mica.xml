@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="mica"
-          fetch="git@github.com:Project-Mica/"
+          fetch="https://github.com/Project-Mica/"
           revision="16-qpr1"  />
 
   <remote name="gitlab"
