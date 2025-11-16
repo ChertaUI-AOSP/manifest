@@ -11,22 +11,13 @@ repo init -u https://github.com/Project-Mica/manifest -b 16-qpr1
 ```bash
 repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
 ```
-# 
 
-## Generating GMS
-
-**Skip GMS and this step by**
-
-```bash
-export TARGET_EXCLUDE_GMS=true 
-```
-
-**Or You Gotta generate gms blobs from latest pixel build yourself**
+**Due to github limitations, tracked gms repo only contains overlays and required scripts
+ follow the steps to include gms**
 
 ```bash
 $ cd vendor/gms
-$ bash extra* {path to your Pixel 10 XL stock dump}
-$ git reset --hard
+$ bash generate-gms.sh
 ```
 ## Now Its time for Building
 
