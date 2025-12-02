@@ -3,13 +3,13 @@
 
   <remote name="mica"
           fetch="https://github.com/Project-Mica/"
-          revision="16-qpr1"  />
+          revision="16-qpr2"  />
 
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
 
   <remote  name="codeberg"
-           revision="16-qpr1"
+           revision="16-qpr2"
            fetch="https://codeberg.org" />
 
   <!-- General Repos -->
