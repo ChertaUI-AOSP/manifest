@@ -46,6 +46,8 @@
   <project path="hardware/libhardware" name="hardware_libhardware" remote="mica" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="mica" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="mica" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="mica" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" groups="qcom,lahaina" remote="mica" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="mica" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
@@ -69,8 +71,10 @@
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="mica" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="mica" />
   <project path="packages/modules/Connectivity" name="micaos/packages_modules_Connectivity" remote="codeberg" />
+  <project path="packages/modules/UprobeStats" name="packages_modules_UprobeStats" remote="mica" />
 
   <!-- System Repos -->
+  <project path="system/bpf" name="system_bpf" remote="mica" />
   <project path="system/core" name="system_core" remote="mica" />
   <project path="system/sepolicy" name="system_sepolicy" remote="mica" />
   <project path="system/update_engine" name="system_update_engine" remote="mica" />
