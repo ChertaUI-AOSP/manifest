@@ -3,7 +3,7 @@
 **To initialize your local repository using the MicaOS , use a command like this** :
 
 ```bash
-repo init -u https://github.com/Project-Mica/manifest -b 16-qpr1
+repo init -u https://github.com/Project-Mica/manifest -b 16-qpr2
 ```
 
 **And then sync up** :
@@ -24,7 +24,7 @@ $ bash generate-gms.sh
 ```bash
 
 $ . build/envsetup.sh
-$ lunch mica_$device-bp3a-userdebug
+$ lunch mica_$device-bp4a-userdebug
 $ m mica-release ( for both fastboot and ota packages)
 ```
 #
