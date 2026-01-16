@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="cherta"
+          fetch="https://github.com/ChertaUI-AOSP/"
+          revision="bp4a" />
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" remote="cherta" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="cherta" />
+
+  <!-- frameworks -->
+  <project path="frameworks/base" name="frameworks_base" remote="cherta" />
+
+  <!-- hardware -->
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="cherta" />
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" remote="cherta" />
+
+  <!-- packages -->
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="cherta" />
+  <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="cherta" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="cherta" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cherta" />
+
+  <!-- vendor -->
+  <project path="vendor/mica" name="vendor_cherta" remote="cherta" />
+  <project path="vendor/gms" name="vendor_gms" remote="cherta" />
+</manifest>

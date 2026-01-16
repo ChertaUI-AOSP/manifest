@@ -5,7 +5,7 @@
           fetch="https://github.com/" 
           revision="lineage-23.2" />
 
-  <!-- LineageOS additions -->
+  <!-- Unix CLI utilities -->
   <project path="external/bash" name="LineageOS/android_external_bash" remote="github" />
   <project path="external/htop" name="LineageOS/android_external_htop" remote="github" />
   <project path="external/nano" name="LineageOS/android_external_nano" remote="github" />
@@ -131,5 +131,4 @@
   <project path="hardware/qcom-caf/sm8750/display/core" name="LineageOS/android_vendor_qcom_opensource_display-core" groups="qcom" revision="lineage-23.2-caf-sm8750" remote="github" />
   <project path="hardware/qcom-caf/sm8750/display/hal" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-23.2-caf-sm8750" remote="github" />
   <project path="hardware/qcom-caf/sm8750/display/intf" name="LineageOS/android_vendor_qcom_opensource_display-intf" groups="qcom" revision="lineage-23.2-caf-sm8750" remote="github" />
-
 </manifest>

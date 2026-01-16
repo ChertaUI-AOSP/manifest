@@ -1050,4 +1050,7 @@
 
   <!-- Mica repos -->
   <include name="snippets/mica.xml" />
+
+  <!-- Cherta repos -->
+  <include name="snippets/cherta.xml" />
 </manifest>
