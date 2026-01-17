@@ -1,30 +1,48 @@
-## **Getting Started** ##
+# Welcome to Herta Space Station
 
-**To initialize your local repository using the MicaOS , use a command like this** :
+## Getting Started
 
-```bash
-repo init -u https://github.com/Project-Mica/manifest -b 16-qpr2
-```
+To get started with the MicaOS/ChertaUI source code, you'll need to be
+familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
 
-**And then sync up** :
-
-```bash
-repo sync -c -j8 --force-sync --no-clone-bundle --no-tags
-```
-
-**Due to github limitations, tracked gms repo only contains overlays and required scripts
- follow the steps to include gms**
+To initialize your local repository, run:
 
 ```bash
-$ cd vendor/gms
-$ bash generate-gms.sh
+repo init -u https://github.com/ChertaUI-AOSP/manifest.git -b bp4a
 ```
-## Now Its time for Building
+
+Then, sync the repository:
 
 ```bash
-
-$ . build/envsetup.sh
-$ lunch mica_$device-bp4a-userdebug
-$ m mica-release ( for both fastboot and ota packages)
+repo sync --force-sync --no-clone-bundle --no-tags # -j83
 ```
-#
+
+## Including GApps/GMS
+Due to GitHub limitations (and to follow upstream), the `vendor/gms` repository only contains overlays and required scripts.
+
+To include GMS, simply paste these commands into the terminal:
+
+```bash
+cd vendor/gms
+bash generate-gms.sh
+```
+
+## Building the System
+
+Initialize the ROM build environment by sourcing the envsetup.sh script:
+
+```bash
+source build/envsetup.sh
+```
+
+After cloning the device-specific sources, use breakfast to configure the build for your device:
+
+```bash
+breakfast devicecodename
+```
+
+Start the compilation:
+
+```bash
+m 83 # OTA package ONLY
+```
