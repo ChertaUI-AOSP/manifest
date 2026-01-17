@@ -10,6 +10,10 @@
   <project path="external/json-c" name="LineageOS/android_external_json-c" groups="qcom,qssi" remote="github" />
   <project path="external/libncurses" name="LineageOS/android_external_libncurses" remote="github" />
 
+  <!-- Hardware -->
+  <project path="hardware/google/pixel" name="LineageOS/android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="github" />
+  <project path="hardware/google/pixel-sepolicy" name="LineageOS/android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="github" />
+
   <!-- CodeAurora additions -->
   <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="github" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="github" />
