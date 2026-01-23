@@ -2,47 +2,15 @@
 <manifest>
 
   <remote name="github"
-          fetch="https://github.com/" 
+          fetch="https://github.com" 
           revision="lineage-23.2" />
 
-  <!-- External -->
-  <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" groups="qcom,qssi" remote="github" />
-  <project path="external/json-c" name="LineageOS/android_external_json-c" groups="qcom,qssi" remote="github" />
-  <project path="external/libncurses" name="LineageOS/android_external_libncurses" remote="github" />
+  <!-- General -->
+  <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" remote="github" />
 
   <!-- Hardware -->
-  <project path="hardware/google/pixel" name="LineageOS/android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="github" />
-  <project path="hardware/google/pixel-sepolicy" name="LineageOS/android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="github" />
-
-  <!-- CodeAurora additions -->
-  <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="github" />
-  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="github" />
-  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,pakala-audio" remote="github" />
-  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar-legacy" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,lanai-audio" revision="lineage-23.2-legacy" remote="github" />
-  <project path="vendor/qcom/opensource/commonsys-intf/audio" name="LineageOS/android_vendor_qcom_opensource_audio-commonsys-intf" groups="qcom,qssi" remote="github" />
-  <project path="vendor/qcom/opensource/commonsys/audio" name="LineageOS/android_vendor_qcom_opensource_audio" groups="qcom,qssi" remote="github" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="github" />
-  <project path="vendor/qcom/opensource/commonsys/fm" name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" groups="qcom,qssi" remote="github" />
-  <project path="vendor/qcom/opensource/commonsys/wfd" name="LineageOS/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pakala-video" remote="github" />
-  <project path="vendor/qcom/opensource/core-utils-sys" name="LineageOS/android_vendor_qcom_opensource_core-utils-sys" groups="qcom,qssi" remote="github" />
-  <project path="vendor/qcom/opensource/core-utils-vendor" name="LineageOS/android_vendor_qcom_opensource_core-utils-vendor" groups="qcom,pakala-vendor" remote="github" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" revision="lineage-23.2-legacy-um" remote="github" />
-  <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" groups="qcom,pakala-vendor" remote="github" />
-  <project path="vendor/qcom/opensource/display" name="LineageOS/android_vendor_qcom_opensource_display" groups="qcom" remote="github" />
-  <project path="vendor/qcom/opensource/healthd-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" groups="qcom,pakala-vendor" remote="github" />
-  <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="github" />
-  <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom" remote="github" />
-  <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" groups="qcom,pakala-vendor" remote="github" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,pakala-vendor" remote="github" />
-  <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,pakala-vendor" remote="github" />
-  <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" remote="github" />
-  <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,qssi" remote="github" />
-  <project path="device/qcom/sepolicy-legacy-um" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,sdm660" revision="lineage-23.2-legacy-um" remote="github" />
-  <project path="device/qcom/sepolicy_vndr/legacy-um" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="lineage-23.2-legacy-um" remote="github" />
-  <project path="device/qcom/sepolicy_vndr/sm8450" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="lineage-23.2-caf-sm8450" remote="github" />
-  <project path="device/qcom/sepolicy_vndr/sm8550" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-23.2-caf-sm8550" remote="github" />
-  <project path="device/qcom/sepolicy_vndr/sm8650" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="lineage-23.2-caf-sm8650" remote="github" />
-  <project path="device/qcom/sepolicy_vndr/sm8750" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,pakala-vendor" revision="lineage-23.2-caf-sm8750" remote="github" />
+  <project path="hardware/lineage/compat" name="LineageOS/android_hardware_lineage_compat" remote="github" />
+  <project path="hardware/lineage/interfaces" name="LineageOS/hardware/lineage/interfaces" remote="github" />
 
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
@@ -60,24 +28,38 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" revision="lineage-19.1" remote="github" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" revision="lineage-19.1" remote="github" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" revision="lineage-19.1" remote="github" />
-  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-build-2024" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-2025" />
   <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="github" />
 
-  <!-- packages repos -->
-  <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" />
-  <project path="packages/apps/Camelot" name="LineageOS/android_packages_apps_Camelot" remote="github" />
-  <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" remote="github" />
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" />
-
-  <!-- Extract utils -->
-  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" remote="github" />
-  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="github" />
-
-  <!-- HALs -->
-  <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,pakala-vendor" remote="github" />
-  <project path="hardware/qcom-caf/thermal-legacy-um" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,lanai-vendor" revision="lineage-23.2-legacy-um" remote="github" />
-  <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="qcom,lanai-vendor" revision="lineage-23.2-caf" remote="github" />
+  <!-- CodeLinaro additions -->
+  <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,qssi" />
+  <project path="device/qcom/sepolicy-legacy-um" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,sdm660" revision="lineage-23.2-legacy-um" remote="github" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="lineage-23.2-legacy-um" remote="github" />
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="lineage-23.2-caf-sm8450" remote="github" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-23.2-caf-sm8550" remote="github" />
+  <project path="device/qcom/sepolicy_vndr/sm8650" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="lineage-23.2-caf-sm8650" remote="github" />
+  <project path="device/qcom/sepolicy_vndr/sm8750" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,pakala-vendor" revision="lineage-23.2-caf-sm8750" remote="github" />
+  <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" groups="qcom,qssi" remote="github" />
+  <project path="external/json-c" name="LineageOS/android_external_json-c" groups="qcom,qssi" remote="github" />
+  <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="qcom,pakala-vendor" revision="lineage-23.2-caf" remote="github" />
   <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-23.2-caf" remote="github" />
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" groups="qcom" remote="github" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
+  </project>
   <project path="hardware/qcom-caf/msm8953/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,msm8953" revision="lineage-23.2-caf-msm8953" remote="github" />
   <project path="hardware/qcom-caf/msm8953/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-23.2-caf-msm8953" remote="github" />
   <project path="hardware/qcom-caf/msm8953/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,msm8953" revision="lineage-23.2-caf-msm8953" remote="github" />
@@ -96,6 +78,7 @@
   <project path="hardware/qcom-caf/sm8250/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,kona" revision="lineage-23.2-caf-sm8250" remote="github" />
   <project path="hardware/qcom-caf/sm8250/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-23.2-caf-sm8250" remote="github" />
   <project path="hardware/qcom-caf/sm8250/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,kona" revision="lineage-23.2-caf-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,lahaina" revision="lineage-23.2-caf-sm8350" remote="github" />
   <project path="hardware/qcom-caf/sm8350/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-23.2-caf-sm8350" remote="github" />
   <project path="hardware/qcom-caf/sm8450/audio/agm" name="LineageOS/android_vendor_qcom_opensource_agm" groups="qcom,waipio-vendor" revision="lineage-23.2-caf-sm8450" remote="github" />
   <project path="hardware/qcom-caf/sm8450/audio/graphservices" name="LineageOS/android_vendor_qcom_opensource_audioreach-graphservices" groups="qcom" revision="lineage-23.2-caf-sm8450" remote="github" />
@@ -126,4 +109,38 @@
   <project path="hardware/qcom-caf/sm8750/display/core" name="LineageOS/android_vendor_qcom_opensource_display-core" groups="qcom" revision="lineage-23.2-caf-sm8750" remote="github" />
   <project path="hardware/qcom-caf/sm8750/display/hal" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-23.2-caf-sm8750" remote="github" />
   <project path="hardware/qcom-caf/sm8750/display/intf" name="LineageOS/android_vendor_qcom_opensource_display-intf" groups="qcom" revision="lineage-23.2-caf-sm8750" remote="github" />
+  <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,pakala-vendor" remote="github" />
+  <project path="hardware/qcom-caf/thermal-legacy-um" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,lanai-vendor" revision="lineage-23.2-legacy-um" remote="github" />
+  <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom,pakala-wlan" revision="lineage-23.2-caf" remote="github" />
+  <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,pakala-audio" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar-legacy" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,lanai-audio" revision="lineage-23.2-legacy" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys-intf/audio" name="LineageOS/android_vendor_qcom_opensource_audio-commonsys-intf" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="LineageOS/android_vendor_qcom_opensource_audio" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/wfd" name="LineageOS/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pakala-video" remote="github" />
+  <project path="vendor/qcom/opensource/core-utils-sys" name="LineageOS/android_vendor_qcom_opensource_core-utils-sys" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="LineageOS/android_vendor_qcom_opensource_core-utils-vendor" groups="qcom,pakala-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" revision="lineage-23.2-legacy-um" remote="github" />
+  <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" groups="qcom,pakala-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/display" name="LineageOS/android_vendor_qcom_opensource_display" groups="qcom" remote="github" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" groups="qcom,pakala-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="github" />
+  <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom" remote="github" />
+  <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" groups="qcom,pakala-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,pakala-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,pakala-vendor" remote="github" />
+  <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" remote="github" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" />
+  <project path="packages/apps/Camelot" name="LineageOS/android_packages_apps_Camelot" remote="github" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" />
+
+  <!-- Extract utils -->
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" remote="github" />
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="github" />
 </manifest>

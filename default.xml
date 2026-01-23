@@ -1045,12 +1045,9 @@
   <!-- Remove unused AOSP repos -->
   <include name="snippets/remove.xml" />
 
-  <!-- Lineage repos -->
-  <include name="snippets/los.xml" />
+  <!-- LineageOS repos -->
+  <include name="snippets/lineage.xml" />
 
-  <!-- Mica repos -->
-  <include name="snippets/mica.xml" />
-
-  <!-- Cherta repos -->
+  <!-- CHerta repos -->
   <include name="snippets/cherta.xml" />
 </manifest>

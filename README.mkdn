@@ -2,29 +2,19 @@
 
 ## Getting Started
 
-To get started with the MicaOS/ChertaUI source code, you'll need to be
+To get started with the CHerta source code, you'll need to be
 familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
 
 To initialize your local repository, run:
 
 ```bash
-repo init -u https://github.com/ChertaUI-AOSP/manifest.git -b bp4a
+repo init -u https://github.com/Project-CHerta/android_manifest.git -b 25h2 --git-lfs
 ```
 
 Then, sync the repository:
 
 ```bash
 repo sync --force-sync --no-clone-bundle --no-tags # -j83
-```
-
-## Including GApps/GMS
-Due to GitHub limitations (and to follow upstream), the `vendor/gms` repository only contains overlays and required scripts.
-
-To include GMS, simply paste these commands into the terminal:
-
-```bash
-cd vendor/gms
-bash generate-gms.sh
 ```
 
 ## Building the System
@@ -44,5 +34,5 @@ breakfast devicecodename
 Start the compilation:
 
 ```bash
-m 83 # OTA package ONLY
+m 83
 ```
